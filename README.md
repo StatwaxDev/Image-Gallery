@@ -2,7 +2,7 @@
 
 A template image gallery 🖼
 
-![Demo Image Gallery](https://imgur.com/a/qRhR9TP)
+![Demo Image Gallery](imgur.com/a/qRhR9TPv)
 
 ## Get Started
 
