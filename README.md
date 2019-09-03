@@ -1,6 +1,6 @@
 # Boilerplate Image-Gallery 
 
-A template image gallery so you dont have to do it all over again.
+A template image gallery 🖼
 
 ## Make a Copy
 
