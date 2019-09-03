@@ -7,6 +7,10 @@ A template image gallery 🖼
 ## Get Started
 
 Either Clone this repo or Copy and paste the contents of this repository.
+```
+ HTTPS $ git clone https://github.com/StatwaxDev/Dropdown-Boilerplate.git
+ SSH $ git clone git@github.com:StatwaxDev/Dropdown-Boilerplate.git
+```
 
 ## Usage
 
