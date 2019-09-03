@@ -27,3 +27,10 @@ suggest using the `column` class to do any modifications to the preview images r
     width: 10%;
   }
 ```
+### If Using a CMS
+If you are using a content management system, you may need to enable `strict mode` and or wrap the script in a `explicit script tag`.
+```javascript
+<script type="text/javascript">
+YOUR CODE HERE
+</script>
+```
