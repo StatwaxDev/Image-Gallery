@@ -2,7 +2,9 @@
 
 A template image gallery 🖼
 
-## Make a Copy
+![Demo Image Gallery](https://imgur.com/a/qRhR9TP)
+
+## Get Started
 
 Either Clone this repo or Copy and paste the contents of this repository.
 
