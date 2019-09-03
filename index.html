@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .image {
+    width: 40%;
+    height: 50%;
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Four columns side by side */
+  .column {
+    float: left;
+    width: 10%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .preview {
+    opacity: 0.6;
+  }
+
+  .active,
+  .preview:hover {
+    opacity: 1;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="image">
+      <img
+        src="YOUR"
+        style="width:100%">
+    </div>
+
+    <div class="image">
+      <img src="YOUR IMAGE URL"
+       style="width:100%">
+    </div>
+
+    <div class="image">
+      <img src="YOUR IMAGE URL"
+       style="width:100%">
+    </div>
+
+    <div class="image">
+      <img src="YOUR IMAGE URL"
+       style="width:100%">
+    </div>
+    <div class="row">
+      <div class="column">
+        <img class="preview cursor"
+          src="YOUR IMAGE URL"
+          style="width:100%"
+          onclick="currentSlide(1)"
+          alt="YOUR IMAGE DESCRIPTION">
+      </div>
+      <div class="column">
+        <img class="preview cursor"
+          src="YOUR IMAGE URL"
+          style="width:100%"
+          onclick="currentSlide(2)"
+          alt="YOUR IMAGE DESCRIPTION">
+      </div>
+      <div class="column">
+        <img class="preview cursor"
+          src="YOUR IMAGE URL"
+          style="width:100%"
+          onclick="currentSlide(3)"
+          alt="YOUR IMAGE DESCRIPTION">
+      </div>
+      <div class="column">
+        <img class="preview cursor"
+          src="YOUR IMAGE URL"
+          style="width:100%"
+          onclick="currentSlide(4)"
+          alt="YOUR IMAGE DESCRIPTION">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("image");
+      let dots = document.getElementsByClassName("preview");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += "active";
+    }
+  </script>
+
+</body>
+
+</html>
